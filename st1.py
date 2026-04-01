@@ -19,7 +19,8 @@ llm = ChatGoogleGenerativeAI(
 st.title("📊 Análisis inteligente de datos")
 
 # Subida de archivo CSV
-uploaded_file = st.file_uploader("📎 Envie su archivo CSV", type=["csv"])
+#uploaded_file = st.file_uploader("📎 Envie su archivo CSV", type=["csv"])
+uploaded_file = "fluxo_caixa.csv"
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
